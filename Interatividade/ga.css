@@ -1,0 +1,134 @@
+/* Estilo geral */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: url('https://giffiles.alphacoders.com/211/211931.gif') no-repeat center center fixed;
+    background-size: cover; /* Ajusta a imagem para preencher toda a tela */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centraliza verticalmente */
+    color: #00f5ff; /* Mantém o texto legível sobre o fundo */
+}
+.top-bar {
+    width: 100%;
+    background-color: #1a1a40;
+    padding: 6px 0;
+    text-align: center;
+    color: #9d4edd;
+    font-size: 1rem; /* BEM menor agora */
+    box-shadow: 0 2px 5px #9d4edd88;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.footer {
+    width: 100%;
+    background-color: #1a1a40;
+    padding: 1px 0; /* quase nada de altura */
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 0.5rem; /* beeem pequeno */
+    margin-top: 10px; /* menos espaço em cima */
+    border-top: 1px solid #444;
+}
+
+/* Containers estilizados */
+.container {
+    background: rgba(25, 25, 50, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 245, 255, 0.3), 0 -5px 15px rgba(157, 78, 221, 0.3);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 245, 255, 0.5), 0 -10px 25px rgba(157, 78, 221, 0.4);
+}
+
+/* Parágrafos */
+p {
+    font-size: 1.8rem;
+    color: #00f5ff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00f5ff88;
+    animation: neonPulse 2s infinite alternate;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 2px solid #c084fc;
+    border-radius: 5px;
+    background-color: #1f1f3d;
+    color: #eeeeee;
+    outline: none;
+    width: 90%;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+input:focus {
+    box-shadow: 0 0 15px #c084fc88;
+    border-color: #a855f7;
+}
+
+/* Botões */
+button {
+    background-color: #9d4edd;
+    color: #eeeeee;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: #5eead4;
+    color: #000;
+    box-shadow: 0 0 20px #5eead488;
+    transform: scale(1.05);
+}
+
+/* Botão especial */
+#botaoTodos {
+    background-color: #1f1f3d;
+}
+#botaoTodos:hover {
+    background-color: #5eead4;
+    box-shadow: 0 0 20px #5eead4, 0 0 30px rgba(94, 234, 212, 0.5);
+    color: #000;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px rgba(157, 78, 221, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.5);
+}
+
+/* Animação neon suave */
+@keyframes neonPulse {
+    from {
+        text-shadow: 0 0 10px #00f5ff88;
+    }
+    to {
+        text-shadow: 0 0 20px #00f5ffff;
+    }
+}
